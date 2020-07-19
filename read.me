@@ -1,0 +1,20 @@
+--------------------------------
+------ text2number readme ------
+--------------------------------
+
+[Descripción]
+El programa consiste en una clase translator que aplica la conversion del texto de entrada mediante el método translate.
+Se basa en la creación de un diccionario con el que poder hacer match en los elementos del texto de entrada.
+Ante un match se evalua si se tiene que sumar o aplicar la potencia de 10 correspondiente.
+Se añade soporte para la partícula 'and' en los números.
+
+[Mejoras]
++ Valorar la utilización de diccionarios dedicados para los números y las potencias de 10.
++ Considerar posibles mejoras (uso de CPU, complejidad) por el tipo de contenedores utilizados, las búsquedas mediante find y el uso de iteradores.
++ Investigar y valorar la utilización de librerías con funcionalidades optimizadas.
++ Utilizar librerias que faciliten TDD y coverage de código para integrarlo en pipelines de CI/CD.
++ Utilizar librerias de logging que permitan definir nivel de logs. Añadir logs mediante estás librerías.
++ Utilizar librerías de integración con sistemas de monitorización.
++ Utilizar CMake para el build. (para el desarrollo he compilado en linux con g++ y en linux con el g++ de MinGW directamente con "g++ -o text2number text2number.cpp").
+
+--------------------------------
